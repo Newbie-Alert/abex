@@ -6,7 +6,7 @@ import Button from "../../shared/common/Button";
 const BannerContainer = styled.div`
   width: 100%;
   height: 100%;
-  background: linear-gradient(-120deg, transparent, rgba(0, 0, 0, 0.6) 50%),
+  background: linear-gradient(-120deg, transparent, rgba(0, 0, 0, 0.6) 70%),
     url("./assets/images/bannerImg.jpg") center;
   background-size: cover;
   position: relative;
@@ -15,7 +15,6 @@ const BannerContainer = styled.div`
 
 const BannerTextBox = styled.div`
   width: fit-content;
-
   position: absolute;
   top: 50%;
   left: 3%;
@@ -30,7 +29,7 @@ const BannerTextHeadBox = styled.div`
   font-size: 4.5rem;
   letter-spacing: -0.25rem;
   color: white;
-  line-height: 1.2;
+  line-height: 1.25;
   font-family: "Poppins-Regular";
   & span {
     color: var(--primary-light-color);

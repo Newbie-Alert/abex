@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Banner from "../../components/Banner/Banner";
 import Services from "../../components/Services/Services";
+import Trainer from "../../components/Trainer/Trainer";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -14,6 +15,7 @@ export default function Home() {
     <HomeContainer>
       <Banner />
       <Services />
+      <Trainer />
     </HomeContainer>
   );
 }

@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Card from "../Card/Card";
 
@@ -12,6 +11,7 @@ const ServiceContainer = styled.section`
 
 const ServiceTitle = styled.h1`
   font-size: 2.5rem;
+  margin-bottom: 2.5rem;
   color: white;
 `;
 
