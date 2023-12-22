@@ -18,5 +18,25 @@
       "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "icon": "faDumbbell"
     }
+  ],
+
+  "trainer": [
+    { "id": 0, "text": "Customized workouts just for you" },
+    { "id": 1, "text": "Knowledge in fitness, nutrition and anatomy" },
+    { "id": 2, "text": "Motivates you to stick to your workout plan" },
+    { "id": 3, "text": "Safe and effective exercises" },
+    {
+      "id": 4,
+      "text": "Adjust your workout plan as your fitness level improves"
+    }
+  ],
+
+  "gallery": [
+    { "id": 0, "url": "gym1.jpg" },
+    { "id": 1, "url": "gym2.jpg" },
+    { "id": 2, "url": "gym3.jpg" },
+    { "id": 3, "url": "gym4.jpg" },
+    { "id": 4, "url": "gym5.jpg" },
+    { "id": 5, "url": "gym6.jpg" }
   ]
 }

@@ -1,27 +1,14 @@
-import "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { findIcon } from "../../util.js/IconGenerate";
+import Button from "../../shared/common/Button";
 
 const ServiceCard = styled.div`
   width: 100%;
-  padding: 1rem;
+  padding: 2rem 1.25rem;
   border: 1px solid white;
   border-radius: 6px;
-`;
-
-const Icon = styled.div`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: white;
-  font-size: 3rem;
-  border: 3px solid var(--primary-color);
-  display: flex;
-  align-items: top;
-  padding-left: 0.9rem;
-  padding-top: 1.2rem;
 `;
 
 const CardTitle = styled.h1`
@@ -31,10 +18,20 @@ const CardTitle = styled.h1`
 `;
 
 const CardDesc = styled.p`
-  width: 95%;
+  width: 100%;
   color: white;
-  line-height: 1.25;
+  line-height: 1.35;
   margin-block: 0.5rem;
+  margin-bottom: 2.5rem;
+`;
+
+const IconBox = styled.div`
+  width: 100px;
+  height: 100px;
+  padding-top: 1.42rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
 `;
 
 export default function Card() {
@@ -56,10 +53,10 @@ export default function Card() {
   const cardList = services?.map((service) => {
     return (
       <ServiceCard key={service.id}>
-        {/* fetch 될 때 해당하는 아이콘을 import 해야한다 */}
-        <FontAwesomeIcon icon={service.icon} />
+        <IconBox>{findIcon(service.icon, "3x")}</IconBox>
         <CardTitle>{service.title}</CardTitle>
         <CardDesc>{service.desc}</CardDesc>
+        <Button width={90} height={50} text={"Go Service"} />
       </ServiceCard>
     );
   });

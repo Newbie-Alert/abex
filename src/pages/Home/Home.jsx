@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../../components/Banner/Banner";
 import Services from "../../components/Services/Services";
 import Trainer from "../../components/Trainer/Trainer";
+import Carousel from "../../components/Carousel/Carousel";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner />
       <Services />
       <Trainer />
+      <Carousel />
     </HomeContainer>
   );
 }

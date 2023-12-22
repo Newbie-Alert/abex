@@ -12,9 +12,9 @@ const ButtonTemp = styled.button.attrs({
   border-radius: 9px;
 
   background-color: ${(props) =>
-    props.isBackground ? `var(--primary-color)` : "transparent"};
+    props.$isBackground ? `var(--primary-color)` : "transparent"};
 
-  color: ${(props) => (props.isBackground ? `white` : `var(--primary-color)`)};
+  color: ${(props) => (props.$isBackground ? `white` : `var(--primary-color)`)};
 
   cursor: pointer;
   transition: all 0.3s var(--transition-default);
@@ -43,7 +43,7 @@ export default function Button({
       onClick={() => naviTo(location)}
       width={width}
       height={height}
-      isBackground={isBackground}>
+      $isBackground={isBackground}>
       {text}
     </ButtonTemp>
   );
